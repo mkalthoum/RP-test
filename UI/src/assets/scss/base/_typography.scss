@@ -1,0 +1,98 @@
+/* 
+ * -----------------------------------------
+ *  Typography
+ *  @@ File: base/_typography.scss
+ * ----------------------------------------- 
+ */
+
+body, .body-text{
+    color: $brand-dark-gray;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.33;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0;
+}
+
+h1, .h1{
+    font-size: 36px;
+    color: $brand-dark-blue;
+    line-height: 0.42;
+    line-height: normal;
+
+}
+h2, .h2{
+    font-size: 28px;
+    color: $brand-dark-gray;
+    line-height: 0.5;
+    line-height: normal;
+}
+h3, .h3 {
+    font-size: 24px;
+    line-height: normal;
+    color: $brand-dark-blue;
+}
+h4, .h4 {
+    font-size: 20px;
+    color: $brand-dark-gray;
+    line-height: normal;
+}
+h5, .h5{
+    font-size: 18px;
+    line-height: normal;
+    color: $brand-dark-gray;
+}
+
+
+p{
+    @extend .body-text;
+    margin-bottom: 10px;
+}
+
+ul, dl{
+    padding-left: 15px;
+    list-style-type: disc;
+    font-size: 16px;
+    color: $brand-dark-gray;
+    ul, dl{
+        list-style-type: disc;
+        padding-left: 25px;
+        > li {
+            margin-top: 5px;
+        }
+    }
+    > li {
+        margin-bottom: 5px;
+    }
+}
+ol{
+    padding-left: 0;
+    list-style-type: number;
+    font-size: 16px;
+    color: $brand-dark-gray;
+    ol{
+        list-style: number;
+        padding-left: 25px;
+        > li {
+            margin-top: 5px;
+        }
+    }
+    > li {
+        margin-bottom: 5px;
+    }
+}
+p{
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+a.btn.cta-icon em{
+    margin-right: 10px;
+}
+a.btn.cta-icon{
+    margin-bottom: 5px;
+}

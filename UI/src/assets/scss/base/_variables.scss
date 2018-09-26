@@ -1,0 +1,57 @@
+/* 
+ * -----------------------------------------
+ *  Variables
+ *  @@ File: base/_variables.scss
+ * ----------------------------------------- 
+ */
+
+
+
+/* ----------------------------------------------------
+   Colors
+------------------------------------------------------- */
+$black					:		#000000;
+$white					: 		#ffffff;
+
+$brand-dark-blue		: 		#025DAB;
+$brand-text-blue		:		#095DA6;
+$brand-alt-blue			:		#35addd;
+$brand-light-blue		:		#EBF2FA;
+$brand-dark-gray 		: 		#404042;
+$brand-light-gray	 	: 		#89898B;
+$brand-lighter-gray		:		#8c8c8e;
+
+$brand-hr-gray			:		#d9d9d9;
+
+$brand-orange			:		#EB5424;
+$brand-green			:  		#149b95;
+
+
+/* ----------------------------------------------------
+   Color Override Classes
+------------------------------------------------------- */
+.black					{color: $black				!important;}		
+.white					{color: $white				!important;} 		
+	
+.brand-dark-blue		{color: $brand-dark-blue	!important;} 		
+.brand-text-blue		{color: $brand-text-blue	!important;} 		
+.brand-alt-blue			{color: $brand-alt-blue		!important;}
+.brand-light-blue		{color: $brand-light-blue	!important;} 		
+.brand-dark-gray 		{color: $brand-dark-gray 	!important;} 
+.brand-light-gray	 	{color: $brand-light-gray	!important;} 
+.brand-orange			{color: $brand-orange	 	!important;} 		
+
+
+/* ----------------------------------------------------
+   Background Color Override Classes
+------------------------------------------------------- */
+
+.bg-black{
+	background-color: $black;
+}
+.bg-white{
+	background-color: $white;
+}
+
+
+

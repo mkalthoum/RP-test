@@ -1,0 +1,61 @@
+/* 
+ * -----------------------------------------
+ *  Buttons
+ *  @@ File: base/_buttons.scss
+ * ----------------------------------------- 
+ */
+
+ 
+ a{
+ 	cursor: pointer;
+    outline: none ;
+
+ 	&:visited{
+ 		color: inherit;
+        outline: none;
+ 	}
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        outline: none ;
+    }
+ }
+ button.btn{
+    &:focus{
+        box-shadow: none;
+        outline: none;
+    }
+ }
+ a.btn{
+ 	text-transform: uppercase;
+ 	font-size: 16px;
+ 	margin-top: 25px;
+ 	margin-bottom: 25px;
+ 	background-color: $white;
+ 	border-radius: 100px;
+ 	padding-top: 15px;
+ 	padding-bottom: 15px;
+ 	padding-right: 20px;
+ 	padding-left: 20px;
+ 	color: $brand-alt-blue;
+ 	border-color: $brand-alt-blue;
+ 	white-space: normal;
+ 	&:hover{
+ 		background-color: $brand-alt-blue;
+ 		color: $white !important;
+ 	}
+    &:visited, &:active, &:focus{
+        border: none;
+        box-shadow: none;
+    }
+
+
+
+ }
+ button.btn{
+     &:visited, &:active, &:focus{
+        box-shadow: none ;
+        outline: none ;
+    }
+ }

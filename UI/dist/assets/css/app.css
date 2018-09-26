@@ -1,0 +1,298 @@
+/* 
+ * -----------------------------------------
+ *  Variables
+ *  @@ File: base/_variables.scss
+ * ----------------------------------------- 
+ */
+/* ----------------------------------------------------
+   Colors
+------------------------------------------------------- */
+/* ----------------------------------------------------
+   Color Override Classes
+------------------------------------------------------- */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+.black {
+  color: #000000 !important; }
+
+.white {
+  color: #ffffff !important; }
+
+.brand-dark-blue {
+  color: #025DAB !important; }
+
+.brand-text-blue {
+  color: #095DA6 !important; }
+
+.brand-alt-blue {
+  color: #35addd !important; }
+
+.brand-light-blue {
+  color: #EBF2FA !important; }
+
+.brand-dark-gray {
+  color: #404042 !important; }
+
+.brand-light-gray {
+  color: #89898B !important; }
+
+.brand-orange {
+  color: #EB5424 !important; }
+
+/* ----------------------------------------------------
+   Background Color Override Classes
+------------------------------------------------------- */
+.bg-black {
+  background-color: #000000; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+/* 
+ * -----------------------------------------
+ *  Responsive Screen Sizes
+ *  @@ File: base/_respensive.scss
+ * ----------------------------------------- 
+ */
+/* 
+ * -----------------------------------------
+ *  MIXINS
+ *  @@ File: base/_mixins.scss
+ * ----------------------------------------- 
+ */
+/* 
+ * -----------------------------------------
+ *  Fonts
+ *  @@ File: base/_fonts.scss
+ * ----------------------------------------- 
+ */
+/* 
+* ----------------------------------------------------
+*
+*  Font Variables, Mixins
+*
+* ----------------------------------------------------
+*/
+@font-face {
+  font-family: "HN-Medium";
+  src: font-files("./../../fonts/HelveticaNeue Medium.woff2", "./../../fonts/HelveticaNeueMedium.woff", "./../../fonts/HelveticaNeue Medium.ttf"); }
+
+@font-face {
+  font-family: "HN-Bold";
+  src: font-files("./../../fonts/Helvetica Neu Bold.ttf"); }
+
+@font-face {
+  font-family: "HelveticaNeue-Reg";
+  src: font-files("./../../fonts/HelveticaNeue-regular.ttf"); }
+
+/* 
+ * -----------------------------------------
+ *  Typography
+ *  @@ File: base/_typography.scss
+ * ----------------------------------------- 
+ */
+body, .body-text, p {
+  color: #404042;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.33; }
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0; }
+
+h1, .h1 {
+  font-size: 36px;
+  color: #025DAB;
+  line-height: 0.42;
+  line-height: normal; }
+
+h2, .h2 {
+  font-size: 28px;
+  color: #404042;
+  line-height: 0.5;
+  line-height: normal; }
+
+h3, .h3 {
+  font-size: 24px;
+  line-height: normal;
+  color: #025DAB; }
+
+h4, .h4 {
+  font-size: 20px;
+  color: #404042;
+  line-height: normal; }
+
+h5, .h5 {
+  font-size: 18px;
+  line-height: normal;
+  color: #404042; }
+
+p {
+  margin-bottom: 10px; }
+
+ul, dl {
+  padding-left: 15px;
+  list-style-type: disc;
+  font-size: 16px;
+  color: #404042; }
+  ul ul, ul dl, dl ul, dl dl {
+    list-style-type: disc;
+    padding-left: 25px; }
+    ul ul > li, ul dl > li, dl ul > li, dl dl > li {
+      margin-top: 5px; }
+  ul > li, dl > li {
+    margin-bottom: 5px; }
+
+ol {
+  padding-left: 0;
+  list-style-type: number;
+  font-size: 16px;
+  color: #404042; }
+  ol ol {
+    list-style: number;
+    padding-left: 25px; }
+    ol ol > li {
+      margin-top: 5px; }
+  ol > li {
+    margin-bottom: 5px; }
+
+p img {
+  max-width: 100%;
+  height: auto; }
+
+a.btn.cta-icon em {
+  margin-right: 10px; }
+
+a.btn.cta-icon {
+  margin-bottom: 5px; }
+
+/* 
+ * -----------------------------------------
+ *  Buttons
+ *  @@ File: base/_buttons.scss
+ * ----------------------------------------- 
+ */
+a {
+  cursor: pointer;
+  outline: none; }
+  a:visited {
+    color: inherit;
+    outline: none; }
+  a:focus {
+    outline: none; }
+  a:hover {
+    outline: none; }
+
+button.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none; }
+
+a.btn {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #35addd;
+  border-color: #35addd;
+  white-space: normal; }
+  a.btn:hover {
+    background-color: #35addd;
+    color: #ffffff !important; }
+  a.btn:visited, a.btn:active, a.btn:focus {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+button.btn:visited, button.btn:active, button.btn:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none; }
+
+/* ----------------------------------------------------
+   Shared COMPONENTS
+------------------------------------------------------- */
+/*
+ * -----------------------------------------
+ *  Header
+ *  @@ File: components/_header.scss
+ * -----------------------------------------
+ */
+/*
+ * -----------------------------------------
+ *  Breadcrumb
+ *  @@ File: components/_breadcrumb.scss
+ * -----------------------------------------
+ */
+/*
+ * -----------------------------------------
+ *  Footer
+ *  @@ File: components/_footer.scss
+ * -----------------------------------------
+ */
+/*
+ * -----------------------------------------
+ *  Modal
+ *  @@ File: components/_modal.scss
+ * -----------------------------------------
+ */
+/* 
+ * -----------------------------------------
+ *  Forms
+ *  @@ File: components/_forms.scss
+ * ----------------------------------------- 
+ */
+/* ----------------------------------------------------
+   General COMPONENTS
+------------------------------------------------------- */
+/* ----------------------------------------------------
+  1) General Styles
+------------------------------------------------------- */
+body {
+  min-width: 320px;
+  position: relative;
+  font-family: "HelveticaNeue-Reg", "HelveticaNeue", Helvetica, Arial, sans-serif; }
+  @media (max-width: 767px) {
+    body {
+      padding: 0 20px; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      padding: 0 20px; } }
+  @media (min-width: 1200px) {
+    body {
+      padding: 0 20px; } }
+
+.container {
+  max-width: 1170px; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1440px; }
+
+.hidden-all {
+  display: none !important; }
+
+::-ms-clear,
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none !important; }
+
+/* ----------------------------------------------------
+ Dev Override Imports - For Backend Overrides (temporary, to move into correct scss files)
+------------------------------------------------------- */
+/* 
+ * -----------------------------------------
+ *  Dev Overrides
+ *  @@ File: /_dev-overrides.scss
+ * ----------------------------------------- 
+ */
+
+/*# sourceMappingURL=app.css.map */

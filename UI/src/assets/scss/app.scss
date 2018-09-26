@@ -1,0 +1,61 @@
+﻿@import "base/variables"; 
+@import "base/responsive";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/typography";
+@import "base/buttons";
+@import "components/components";
+
+
+/* ----------------------------------------------------
+  1) General Styles
+------------------------------------------------------- */
+
+body{
+	  min-width: 320px;
+    position: relative;
+    font-family: $font;
+
+     @include sm-only {
+        padding: 0 20px;
+      }
+
+     @include md-only {
+        padding: 0 20px;
+      }
+
+     @include xl {
+        padding: 0 20px;
+      }
+      
+}
+.container{
+  max-width: 1170px;
+}
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1440px;
+}
+
+.hidden-all{
+  display: none !important;
+}
+
+
+::-ms-clear,
+::-webkit-search-decoration,
+::-webkit-search-cancel-button,
+::-webkit-search-results-button,
+::-webkit-search-results-decoration {
+  display: none !important;
+}
+
+
+
+/* ----------------------------------------------------
+ Dev Override Imports - For Backend Overrides (temporary, to move into correct scss files)
+------------------------------------------------------- */
+
+@import "dev-overrides";
+

@@ -1,0 +1,71 @@
+/* 
+ * -----------------------------------------
+ *  Responsive Screen Sizes
+ *  @@ File: base/_respensive.scss
+ * ----------------------------------------- 
+ */
+ 
+
+// Mobile
+$sm-min: 576px;
+$sm-max: 768px;
+
+// Tablets and small desktops
+$md-min: 992px;
+$md-max: 1024px;
+
+// Large tablets and desktops
+$xl-min: 1200px;
+
+
+// Small devices
+@mixin sm {
+   @media (min-width: #{$sm-min}) {
+       @content;
+   }
+}
+
+// Only Small devices
+@mixin sm-only {
+   @media (max-width: #{$sm-max - 1px}) {
+       @content;
+   }
+}
+
+// Medium devices
+@mixin md {
+   @media (min-width: #{$md-min}) {
+       @content;
+   }
+}
+
+// Only Small Tablet devices
+@mixin md-only {
+   @media (min-width: #{$sm-max}) and  (max-width: #{$md-max}) {
+       @content;
+   }
+}
+
+// Large devices
+@mixin lg {
+   @media (min-width: #{$lg-min}) {
+       @content;
+   }
+}
+
+// Extra large devices
+@mixin xl {
+   @media (min-width: #{$xl-min}) {
+       @content;
+   }
+}
+
+
+// Custom devices
+@mixin rwd($size) {
+   @media (min-width: $size + 'px') {
+       @content;
+   }
+}
+
+

@@ -1,0 +1,48 @@
+{
+  "name": "RP",
+  "version": "1.0.0",
+  "author": "Rightpoint",
+  "description": "RP's reference - starter kit",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.4.0",
+    "browserify-shim": "^3.8.14",
+    "css-loader": "^0.28.4",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^1.1.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-inject": "^4.2.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-propeller": "^1.0.3",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "html-loader": "^0.4.4",
+    "imagemin-pngquant": "^5.0.1",
+    "jquery": "^3.2.1",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "node-sass": "^4.5.3",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "es6-promise": "^4.1.1",
+    "vinyl-source-stream": "^1.1.2"
+  }
+}
