@@ -30,19 +30,27 @@
     "gulp-replace": "^0.6.1",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "gulp-uglify": "^3.0.0",
+    "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "html-loader": "^0.4.4",
     "imagemin-pngquant": "^5.0.1",
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
     "node-sass": "^4.5.3",
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "@angular/cli": "^6.2.4",
     "bootstrap": "^3.3.7",
+    "bower": "^1.8.4",
     "es6-promise": "^4.1.1",
-    "vinyl-source-stream": "^1.1.2"
+    "gulp-clean": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-useref": "^3.1.5",
+    "sass": "^1.14.1",
+    "vinyl-source-stream": "^1.1.2",
+    "wiredep": "^4.0.0"
   }
 }

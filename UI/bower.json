@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "description": "test",
+  "main": "gulpfile.js",
+  "authors": [
+    "Moe"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mkalthoum/RP-test",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.7.5",
+    "modernizer": "^2.8.2",
+    "jquery": "^3.3.1"
+  }
+}

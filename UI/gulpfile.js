@@ -26,7 +26,11 @@ var fileinclude = require('gulp-file-include');
 var notify = require("gulp-notify");
 var browserSync = require('browser-sync').create();
 var replace = require('gulp-replace');
-
+var wiredep = require('wiredep').stream;
+var ngAnnotate = require('gulp-ng-annotate');
+var useref = require('gulp-useref');
+var gulpif = require('gulp-if');
+var clean = require('gulp-clean');
 // images
 var imagemin     = require("gulp-imagemin");
 var pngquant     = require('imagemin-pngquant');
@@ -59,6 +63,11 @@ gulp.task('css', function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task('clean', function() {
+    gulp.src('./dist/*')
+      .pipe(clean({force: true}));
+});
+
 /**
 *
 * Javascript
@@ -67,13 +76,17 @@ gulp.task('css', function () {
 *
 **/
 
+/** Include all bower dependencies into a single vendor,js file and compress it*/
+
+
+
 gulp.task('js', function () {
   browserify('./src/assets/js/main.js')
-    .bundle() 
-    .on('error', function (e) { 
-      gutil.log(e); 
+    .bundle()
+    .on('error', function (e) {
+      gutil.log(e);
     })
-    .pipe(source('app.bundle.js')) 
+    .pipe(source('app.bundle.js'))
     .pipe(gulp.dest('./dist/assets/js'))
     //.pipe(notify({ message: "JS bundled."}) )
     .pipe(browserSync.stream());
@@ -107,7 +120,7 @@ gulp.task('inject', function() {
     // Partials
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: './src/partials'
+      basepath: './src/partials/'
     }))
     .pipe(gulp.dest('./dist'))
     // .pipe(notify({ message: "File include tasks done."}) )
@@ -128,14 +141,14 @@ gulp.task('inject', function() {
 /**
 *
 * BrowserSync
-* 
+*
 **/
 
 
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./dist"
         }
     });
 });
@@ -178,7 +191,7 @@ gulp.task('default', function() {
 
 // Build local files,inject partials and js
 gulp.task('build', function() {
-    gulp.start('css', 'inject');
+    gulp.start('css', 'inject',);
 });
 
 
@@ -186,7 +199,7 @@ gulp.task('build', function() {
 /**
 *
 * Watch tasks
-* 
+*
 *
 **/
 

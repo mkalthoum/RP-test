@@ -1,8 +1,8 @@
-/* 
+/*
  * -----------------------------------------
  *  Typography
  *  @@ File: base/_typography.scss
- * ----------------------------------------- 
+ * -----------------------------------------
  */
 
 body, .body-text{
@@ -45,49 +45,8 @@ h5, .h5{
     color: $brand-dark-gray;
 }
 
-
-p{
-    @extend .body-text;
-    margin-bottom: 10px;
-}
-
-ul, dl{
-    padding-left: 15px;
-    list-style-type: disc;
-    font-size: 16px;
-    color: $brand-dark-gray;
-    ul, dl{
-        list-style-type: disc;
-        padding-left: 25px;
-        > li {
-            margin-top: 5px;
-        }
-    }
-    > li {
-        margin-bottom: 5px;
-    }
-}
-ol{
-    padding-left: 0;
-    list-style-type: number;
-    font-size: 16px;
-    color: $brand-dark-gray;
-    ol{
-        list-style: number;
-        padding-left: 25px;
-        > li {
-            margin-top: 5px;
-        }
-    }
-    > li {
-        margin-bottom: 5px;
-    }
-}
-p{
-    img{
-        max-width: 100%;
-        height: auto;
-    }
+ol, ul {
+    list-style: none;
 }
 
 a.btn.cta-icon em{
@@ -95,4 +54,9 @@ a.btn.cta-icon em{
 }
 a.btn.cta-icon{
     margin-bottom: 5px;
+}
+a {
+  color: #fff;
+    text-decoration: none;
+    outline: 0;
 }

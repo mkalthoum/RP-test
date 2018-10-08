@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="moeDemo">
+
+<head lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rightpoint">
+    <meta name="author" content="Rightpoint">
+    <title>RP-Test</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="./assets/css/app.css" rel="stylesheet">
+    <!--Scripts-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+ <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+     <script type="text/javascript" src="/assets/js/jquery.js"></script>
+    <script src="./assets/js/app.bundle.js"></script>
+
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <div id="wrapper-inner">
+<header>
+  <div id="header-inner">
+  	<a id="logo" href="/"></a>
+  	<nav id="primary-nav">
+  		<div id="primary-nav-inner" style="transform: translate3d(0px, 0px, 0px);">
+  			<ul><li><a class="nav-item" href="/animation">animation<span></span></a></li>
+          <li><a href="/interactive">interactive<span></span></a></li></ul>
+
+  		</div>
+  	</nav>
+
+  </div>
+
+    </header>
+    <div id="pages">
+    					<div id="pages-inner"><div id="home" class="page" style="display: block;"><div id="home-page-inner" class="page-inner">
+    	<div class="detail-slides">
+    	</div>
+  <div ng-view></div>
+      </html>

@@ -1,33 +1,30 @@
-﻿@import "base/variables"; 
-@import "base/responsive";
-@import "base/mixins";
-@import "base/fonts";
-@import "base/typography";
-@import "base/buttons";
+﻿@import "base/_index.scss";
 @import "components/components";
-
+@import "bootstrap/_bootstrap.scss";
 
 /* ----------------------------------------------------
   1) General Styles
 ------------------------------------------------------- */
 
 body{
-	  min-width: 320px;
-    position: relative;
-    font-family: $font;
-
+  font-family: $font;
+color: #fff;
+-webkit-font-smoothing: antialiased;
+-webkit-tap-highlight-color: transparent;
+-webkit-text-size-adjust: none;
+      display: block;
+margin: 0;
      @include sm-only {
-        padding: 0 20px;
       }
 
      @include md-only {
-        padding: 0 20px;
+
       }
 
      @include xl {
-        padding: 0 20px;
+
       }
-      
+
 }
 .container{
   max-width: 1170px;
@@ -52,10 +49,28 @@ body{
 }
 
 
-
 /* ----------------------------------------------------
  Dev Override Imports - For Backend Overrides (temporary, to move into correct scss files)
 ------------------------------------------------------- */
 
 @import "dev-overrides";
-
+header {
+	    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
