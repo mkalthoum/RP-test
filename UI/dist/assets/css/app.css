@@ -632,12 +632,14 @@ header #header-inner {
               @media (min-height: 480px) and (min-width: 480px) {
                 .page-nav-zone .page-nav-wrapper .page-nav ul li a h4:nth-of-type(1) {
                   width: 40px; } }
-          .page-nav-zone .page-nav-wrapper .page-nav ul li a.active h4 {
-            color: #000; }
           .page-nav-zone .page-nav-wrapper .page-nav ul li a:hover h4 {
-            color: #fff; }
-          .page-nav-zone .page-nav-wrapper .page-nav ul li a.active h4 {
-            color: #000; }
+            background-color: black;
+            color: white; }
+
+.show {
+  display: block;
+  color: black;
+  padding-left: 100px; }
 
 /* ----------------------------------------------------
    General COMPONENTS

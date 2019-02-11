@@ -3,6 +3,7 @@
 
 <head lang="en">
     <meta charset="utf-8">
+    <base href="/home">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Rightpoint">
@@ -12,9 +13,10 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link href="./assets/css/app.css" rel="stylesheet">
     <!--Scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-     <script type="text/javascript" src="/assets/js/jquery.js"></script>
+
     <script src="./assets/js/app.bundle.js"></script>
 
 </head>
@@ -40,7 +42,68 @@
     <div id="pages">
     					<div id="pages-inner"><div id="home" class="page" style="display: block;"><div id="home-page-inner" class="page-inner">
     	<div class="detail-slides">
+          <div ng-view></div>
     	</div>
-  <div ng-view></div>
+
+  <div class="page-nav-zone">
+    <div class="page-nav-wrapper">
+    <div id="nav" class="page-nav">
+      <ul>
+
+
+          <li>
+            <a href="/" id="#linkSummary" >
+              <span class="black-bar"></span>
+
+                <h4>01</h4>
+
+              <h4>About Us</h4>
+            </a>
+          </li>
+
+          <li>
+            <a href="/services" routerLink="/services" routerLinkActive="active" id="#linkServices">
+              <span class="black-bar"></span>
+
+                <h4>02</h4>
+
+              <h4>Services</h4>
+            </a>
+          </li>
+
+          <li>
+            <a class="ajaxy" href="/recognition" data-id="recognition">
+              <span class="black-bar"></span>
+
+                <h4>03</h4>
+
+              <h4>Recognition</h4>
+            </a>
+          </li>
+
+          <li>
+            <a class="ajaxy" href="/home/contact" data-id="contact">
+              <span class="black-bar"></span>
+
+                <h4>04</h4>
+
+              <h4>Contact</h4>
+            </a>
+          </li>
+
+          <li>
+            <a class="ajaxy" href="/home/careers" data-id="careers">
+              <span class="black-bar"></span>
+
+                <h4>05</h4>
+
+              <h4>Careers</h4>
+            </a>
+          </li>
+
+      </ul>
+  </div></div>
+</div>
+</div>
       </html>
 

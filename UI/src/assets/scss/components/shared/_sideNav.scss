@@ -68,7 +68,10 @@ transform: translate3d(-40px,0,0);
     transform: translate3d(40px,0,0);
     -webkit-transition: -webkit-transform 500ms cubic-bezier(.215,.61,.355,1);
       transition: transform 500ms cubic-bezier(.215,.61,.355,1);
+
   }
+
+
     }
     h4 {
         float: left;
@@ -94,20 +97,19 @@ h4:nth-of-type(1) {
 }
 }
 }
-a.active h4 {
-    color: #000;
-}
  a:hover h4 {
-      color: #fff;
-
+   background-color: black;
+   color: white;
 }
-a.active h4 {
 
-    color: #000;
-}
 
 }
 }
 }
 }
+}
+.show {
+  display: block;
+  color: black;
+  padding-left: 100px;
 }
